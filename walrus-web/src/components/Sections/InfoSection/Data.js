@@ -1,0 +1,16 @@
+export const homeObjOne = {
+	id: 'home',
+	lightBg: false,
+	lightText: true,
+	lightTextDesc: true,
+	topLine: '',
+	headline: 'Whacky Walrus',
+	description: 'Whacky Walrus NFT is a collection of 10,000 randomly generated Walruses using a pool of over 200 different hand-drawn traits. These Walruses live in the Ethereum blockchain, stored as ERC-721 tokens, and are hosted on the InterPlanetary File System (IPFS).',
+	imgStart: false,
+	img: require('../../../images/walrus-anim.gif').default,
+	alt: 'Walrus Gif',
+	dark: true,
+	primary: true,
+	darkText: false,
+	useBorder: true,
+}

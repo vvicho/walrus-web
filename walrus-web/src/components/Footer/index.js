@@ -1,12 +1,7 @@
 import React from 'react'
-import { FaDiscord, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaTwitter } from 'react-icons/fa'
 import {
 	FooterContainer,
-	FooterLink,
-	FooterLinkItems,
-	FooterLinksContainer,
-	FooterLinksWrapper,
-	FooterLinkTitle,
 	FooterWrap,
 	SocialIconLink,
 	SocialIcons,
@@ -25,62 +20,15 @@ const Footer = () => {
   return (
 	  <FooterContainer>
 		  <FooterWrap>
-			  <FooterLinksContainer>
-				  <FooterLinksWrapper>
-					  <FooterLinkItems>
-						  <FooterLinkTitle>About Us</FooterLinkTitle>
-						  <FooterLink to="/nfts">nfts</FooterLink>
-						  <FooterLink to="about">About</FooterLink>
-						  <FooterLink to="roadmap">Roadmap</FooterLink>
-						  <FooterLink to="something">Something</FooterLink>
-						  <FooterLink to="buy">Buy!</FooterLink>
-					  </FooterLinkItems>
-					  <FooterLinkItems>
-						  <FooterLinkTitle>About Us</FooterLinkTitle>
-						  <FooterLink to="/nfts">nfts</FooterLink>
-						  <FooterLink to="about">About</FooterLink>
-						  <FooterLink to="roadmap">Roadmap</FooterLink>
-						  <FooterLink to="something">Something</FooterLink>
-						  <FooterLink to="buy">Buy!</FooterLink>
-					  </FooterLinkItems>
-				  </FooterLinksWrapper>
-				  <FooterLinksWrapper>
-					  <FooterLinkItems>
-						  <FooterLinkTitle>About Us</FooterLinkTitle>
-						  <FooterLink to="/nfts">nfts</FooterLink>
-						  <FooterLink to="about">About</FooterLink>
-						  <FooterLink to="roadmap">Roadmap</FooterLink>
-						  <FooterLink to="something">Something</FooterLink>
-						  <FooterLink to="buy">Buy!</FooterLink>
-					  </FooterLinkItems>
-					  <FooterLinkItems>
-						  <FooterLinkTitle>About Us</FooterLinkTitle>
-						  <FooterLink to="/nfts">nfts</FooterLink>
-						  <FooterLink to="about">About</FooterLink>
-						  <FooterLink to="roadmap">Roadmap</FooterLink>
-						  <FooterLink to="something">Something</FooterLink>
-						  <FooterLink to="buy">Buy!</FooterLink>
-					  </FooterLinkItems>
-				  </FooterLinksWrapper>
-			  </FooterLinksContainer>
 			  <SocialMedia>
 				  <SocialMediaWrap>
 					  <SocialLogo to='/' onClick={toggleHome}>
-						  dolla
+						  Whacky Walrus NFT
 					  </SocialLogo>
-					  <WebsiteRights>dolla c {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+					  <WebsiteRights>Whacky Walrus NFT © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
 					  <SocialIcons>
-						  <SocialIconLink href='/' taget='_blank' aria-label='Facebook'>
-							  <FaFacebook />
-						  </SocialIconLink>
-						  <SocialIconLink href='/' taget='_blank' aria-label='Twitter'>
+						  <SocialIconLink href='https://www.twitter.com/whackywalrusnft' taget='_blank' aria-label='Twitter'>
 							  <FaTwitter />
-						  </SocialIconLink>
-						  <SocialIconLink href='/' taget='_blank' aria-label='Discord'>
-							  <FaDiscord />
-						  </SocialIconLink>
-						  <SocialIconLink href='/' taget='_blank' aria-label='Instagram'>
-							  <FaInstagram />
 						  </SocialIconLink>
 					  </SocialIcons>
 				  </SocialMediaWrap>

@@ -3,9 +3,8 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-	background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+	background: #000;
 	height: 80px;
-	margin-top: -80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,6 +26,10 @@ export const NavbarContainer = styled.div`
 	width: 100%;
 	padding: 0 24px;
 	max-width: 1100px;
+
+	@media screen and (max-width: 768px) {
+		justify-content: space-evenly;
+	}
 `
 
 export const NavLogo = styled(LinkR)`
@@ -39,6 +42,14 @@ export const NavLogo = styled(LinkR)`
 	margin-left: 24px;
 	font-weight: bold;
 	text-decoration: none;
+
+	:hover {
+		color: #106010;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin: 0;
+	}
 `
 
 export const MobileIcon = styled.div`
@@ -63,7 +74,7 @@ export const NavMenu = styled.ul`
 	text-align: center;
 	margin-right: -22px;
 	margin-top: auto;
-
+	padding-left: 0;
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
@@ -83,7 +94,12 @@ export const NavLinks = styled(LinkS)`
 	cursor: pointer;
 
 	&.active {
-		border-bottom: 3px solid #01bf71;
+		color: #01bf71;
+		font-weight: bold;
+	}
+
+	:hover {
+		color: #106010;
 	}
 `
 
@@ -100,7 +116,7 @@ export const NavBtnLink = styled(LinkR)`
 	border-radius: 50px;
 	background: #01bf71;
 	white-space: nowrap;
-	padding 10px 22px;
+	padding: 10px 22px;
 	color: #010606;
 	font-size: 16px;
 	border: none;
@@ -120,7 +136,7 @@ export const ConnectWalletButton = styled.div`
 	border-radius: 50px;
 	background: #01bf71;
 	white-space: nowrap;
-	padding 10px 22px;
+	padding: 10px 22px;
 	color: #010606;
 	font-size: 16px;
 	border: none;

@@ -4,7 +4,7 @@ import { injected } from './connectors';
 import { useEagerConnect, useInactiveListener } from './hooks';
 // import { Spinner } from './components/Spinner';
 import { useEffect, useState } from 'react';
-import { ConnectWalletButton, NavBtn } from './components/Navbar/NavbarElements';
+import { ConnectWalletButton } from './components/Navbar/NavbarElements';
 
 // const connectorsByName = {
 	// Injected: injected,
@@ -33,11 +33,8 @@ function WalletConnector() {
 	const context = useWeb3React();
 	const {
 		connector,
-		library,
-		// chainId,
 		account,
 		activate,
-		deactivate,
 		active,
 		error
 	} = context;

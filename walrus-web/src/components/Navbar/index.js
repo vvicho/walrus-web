@@ -6,7 +6,6 @@ import {
 	Nav,
 	NavbarContainer,
 	NavBtn,
-	NavBtnLink,
 	NavItem,
 	NavLinks,
 	NavLogo,
@@ -34,18 +33,20 @@ const Navbar = ({ toggle }) => {
 		scroll.scrollToTop();
 	}
 
+	// const navigateToGetElement
+
   return (
 	  <>
 		  <IconContext.Provider value={{color: '#fff'}}>
 			<Nav scrollNav={scrollNav}>
 				<NavbarContainer>
-				  <NavLogo to="/" onClick={toggleHome}>dolla</NavLogo> 
+				  <NavLogo to="/" onClick={toggleHome}>Whacky Walrus NFT</NavLogo> 
 				  <MobileIcon onClick={toggle}>
 					  <FaBars/>
 				  </MobileIcon>
 				  <NavMenu>
 					  <NavItem>
-						  <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</NavLinks>
+						  <NavLinks to="home" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Home</NavLinks>
 					  </NavItem>
 					  <NavItem>
 						  <NavLinks to="roadmap" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Roadmap</NavLinks>
@@ -55,6 +56,9 @@ const Navbar = ({ toggle }) => {
 					  </NavItem>
 					  <NavItem>
 						  <NavLinks to="buy" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Buy!</NavLinks>
+					  </NavItem>
+  					  <NavItem>
+						  <NavLinks to="faq" smooth={true} duration={500} spy={true} exact='true' offset={-80}>FAQ</NavLinks>
 					  </NavItem>
 				  </NavMenu>
 				  <NavBtn>
