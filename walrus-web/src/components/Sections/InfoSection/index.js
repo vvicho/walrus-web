@@ -7,11 +7,17 @@ import {
 	ImgWrap,
 	InfoContainer,
 	InfoRow,
+	InfoSocialMedia,
 	InfoWrapper,
+	OpenSeaLink,
 	Subtitle,
 	TextWrapper,
 	TopLine
 } from './InfoElements'
+
+import { FaDiscord, FaTwitter } from 'react-icons/fa'
+import { SocialIconLink } from '../../Footer/FooterElements'
+
 
 const InfoSection = ({ lightBg,
 	id,
@@ -34,6 +40,17 @@ const InfoSection = ({ lightBg,
 			  <InfoWrapper>
 				  <InfoRow imgStart={imgStart}>
 					  <Column1>
+						  <InfoSocialMedia>
+							  <SocialIconLink href='https://www.twitter.com/whackywalrusnft' taget='_blank' aria-label='Twitter'>
+								  <FaTwitter size='40px' />
+							  </SocialIconLink>
+							  <SocialIconLink href='https://discord.gg/kUceuwe4sp' target='_blank' aria-label='Discord'>
+								  <FaDiscord size='40px' />
+							  </SocialIconLink>
+							  <SocialIconLink href='https://opensea.io/collection/whacky-walrus' target='_blank' aria-label='OpenSea'>
+								  <OpenSeaLink size='40px' />
+							  </SocialIconLink>
+						  </InfoSocialMedia>
 						  <TextWrapper>
 							  <TopLine>{topLine}</TopLine>
 							  <Heading lightText={lightText}>{headline}</Heading>

@@ -53,6 +53,16 @@ export const MintingPrices = styled.div`
 	padding-bottom: 20px;
 `;
 
+export const MintingCurrentGas = styled.div`
+
+`;
+
+export const MintingGasPriceRefresh = styled.span`
+	cursor: pointer;
+`;
+
+export const MintingMinted = styled.div``;
+
 export const SoldOutContainer = styled.div`
 	display: flex;
 	flex-direction: column;

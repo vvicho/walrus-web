@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaTwitter } from 'react-icons/fa'
+import { FaDiscord, FaTwitter } from 'react-icons/fa'
 import {
 	FooterContainer,
 	FooterWrap,
@@ -29,6 +29,9 @@ const Footer = () => {
 					  <SocialIcons>
 						  <SocialIconLink href='https://www.twitter.com/whackywalrusnft' taget='_blank' aria-label='Twitter'>
 							  <FaTwitter />
+						  </SocialIconLink>
+						  <SocialIconLink href='https://discord.gg/kUceuwe4sp' target='_blank' aria-label='Discord'>
+							  <FaDiscord />
 						  </SocialIconLink>
 					  </SocialIcons>
 				  </SocialMediaWrap>

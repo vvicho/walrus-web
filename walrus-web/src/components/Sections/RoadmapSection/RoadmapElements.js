@@ -75,7 +75,7 @@ export const UnlockText = styled.p`
 	flex-direction: row;
 	align-items: center;
 	margin: 10px 10px 10px 0;
-	font-size: large;
+	font-size: x-large;
 	color: white;
 	
 	@media screen and (max-width: 768px) {

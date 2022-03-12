@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { ReactComponent as Icon} from '../../../images/OpenSeaLogo.svg';
 
 export const InfoContainer = styled.div`
 	color: #fff;
@@ -19,6 +21,22 @@ export const InfoWrapper = styled.div`
 	padding: 50px 24px;
 	justify-content: center;
 `
+
+export const InfoSocialMedia = styled.div`
+	text-align: center;
+`;
+
+export const OpenSeaLink = styled(Icon)`
+	width: 40px;
+	height: 40px;
+	fill: blue;
+
+	path {
+		&:hover {
+		fill: #0d6efd;
+		}
+	}
+`;
 
 export const InfoRow = styled.div`
 	display: grid;
@@ -45,7 +63,7 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
 	max-width: 540px;
-	padding-top 0;
+	padding-top: 0;
 	padding-bottom: 60px;
 
 	@media screen and (max-width: 768px) {

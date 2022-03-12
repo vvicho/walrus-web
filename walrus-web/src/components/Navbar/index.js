@@ -62,7 +62,6 @@ const Navbar = ({ toggle }) => {
 					  </NavItem>
 				  </NavMenu>
 				  <NavBtn>
-						  {/* <NavBtnLink to="/nfts">Sign in</NavBtnLink> */}
 						  <WalletConnector />
 				  </NavBtn>
 				</NavbarContainer>

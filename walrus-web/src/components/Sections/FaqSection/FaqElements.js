@@ -30,13 +30,14 @@ export const FaqItem = styled.li`
 `;
 
 export const FaqQuestion = styled.div`
-	font-size: x-large;
+	font-size: xx-large;
 	font-weight: 400;
 	padding-bottom: 10px;
+	text-decoration: underline;
 `;
 
 export const FaqAnswer = styled.div`
-	font-size: large;
+	font-size: x-large;
 `;
 
 export const MoreQuestions = styled.div``;
